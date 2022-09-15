@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Purchase Ticket</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body><div id="content">
+    <header>
+      <div class="logo-box"><a href="index.html"><img src="https://cdn.glitch.global/721b7642-f9ec-4355-a057-269e3acc9462/BlueTypeLogo.png?v=1658012470468" alt="leo expo logo"/></a></div>
+      <nav>
+          <ul class="top-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learn-more.html">Learn More</a></li>
+            <li><a href="purchase-ticket.html">Purchase Ticket</a></li>
+          </ul>
+      </nav>
+    </header>
+  <main>
+    <div class="banner-box">
+      <img class="banner" src="https://cdn.glitch.global/721b7642-f9ec-4355-a057-269e3acc9462/earth-1756274_640.jpg?v=1657431969325" alt="leo expo banner starry sky"/></div>
+    <div class="purchase-ticket-grid">
+      <div class="purchase-ticket-left-img">
+        <img src="https://cdn.glitch.global/721b7642-f9ec-4355-a057-269e3acc9462/ticket-2974645_640.jpg?v=1657430225069" alt="ticket roll"/>
+      </div>
+      <h2 class="purchase-ticket-headline-1">Purchase Ticket</h2>
+      <p class="purchase-ticket-paragraph-1-1">
+        Fill out the form below to check availability and purchase a ticket. The LEO Expo begins on October 1st. Tickets are currently available through October 20th. More tickets may become available through November and announced on the home page.
+</p>
+      <div class="purchase-ticket-right-img">
+        <img src="https://cdn.glitch.global/721b7642-f9ec-4355-a057-269e3acc9462/receptionists-5975962_640.jpg?v=1657430209157" alt="expo attendant on phone"/>
+      </div>
+    </div>
+    
+          <div id="feedback">
+    </div>
+    <form action="/form-handling-page" method="post">
+      <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        
+        formElement.addEventListener('submit', function(e) {
+          e.preventDefault();
+          feedbackElement.innerHTML = "Our Apologies! There isn't enough tickets left for " + formElement.user_date.value;
+          feedbackElement.style.display = "block";
+          document.body.classList.toggle('moveDown');
+             });
+      </script>
+       <ul>
+         <li>
+           <label for="tickets">Desired Quantity:</label>
+           <input type="number" id="tickets" name="user_tickets">
+         </li>
+         <li>
+           <label for="date">Desired Date:</label>
+           <input type="date" id="date" name="user_date">
+         </li>
+         <li>
+           <button type="submit">
+             Check Availability
+           </button>
+         </li>
+      </ul>
+    </form>
+  </main>
+  <footer>
+    <nav>
+          <ul class="bottom-list">
+            <li class="info">&copy;2022 Emory Hubbard</li>
+            <li class="info">&vert;</li>
+            <li class="info">Not A Real Website</li>
+            <li class="info">&vert;</li>
+            <li class="info"><a href="site-plan.html">Site Plan</a></li>
+            <li class="instagram"><a href="https://instagram.com"><img src="https://cdn.glitch.global/721b7642-f9ec-4355-a057-269e3acc9462/instagram.png?v=1657571112134"></a></li>
+    <li class="twitter"><a href="https://twitter.com"><img src="https://cdn.glitch.global/721b7642-f9ec-4355-a057-269e3acc9462/twitter.png?v=1657571115346"></a>
+    </li><li class="facebook"><a href="https://facebook.com"><img src="https://cdn.glitch.global/721b7642-f9ec-4355-a057-269e3acc9462/facebook.png?v=1657571119136"></a></li>
+            </ul>
+      </nav>
+    
+  </footer>
+</div></body>
+
+</html> 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+							<html lang="en-US">
+							  <head>
+								<meta charset="utf-8">
+								<title>Media Card Component</title>
+                <style>
+                  img {
+                    max-width: 100%;
+                    width: 320px;
+                  }
+                  .card {
+                    width: 320px;
+                    box-shadow: 1px 1px 4px 1px #888;
+                    border-radius: 3px; background-color: white;
+                    overflow: hidden;
+                  }
+                  p, button, span {
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                  }
+                  button, span {
+                    color: #888
+                  }
+                  p {
+                    padding-left: 1em;
+                  }
+                  .viewButton {
+                    border-radius: 3px 0 0 3px;
+                    border-right: 0px;
+                  }
+                  .editButton {
+                    border-radius: 0 3px 3px 0;
+                  }
+                  span {
+                    float: right;
+                    padding-right: 1em;
+                    padding-top: .5em;
+                  }
+                  footer {
+                    
+                    clear: both;
+                    padding-bottom: 1em;
+                    padding-left: 1em;
+                  }
+                  button {
+                    background-color: transparent;
+                    border: 2px solid grey;
+                    padding: .5em;
+                  }
+                </style>
+							  </head>
+							  <body>
+								<article class="card">
+                  <img src="https://picsum.photos/320/240">
+                  <p>
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  </p>
+                  <footer>
+                    <button class="viewButton">View</button><button class="editButton">Edit</button>
+                    <span>9 mins</span>
+                  </footer>
+                  </article>
+							  </body>
+							</html>
